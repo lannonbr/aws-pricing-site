@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Pricing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>AWS Pricing Cheatsheet</h1>
+      <p>
+        This is a short summary of the pricing structure of AWS services that I
+        frequently use. This accompanies my post
+        <a href="https://lannonbr.com/blog/aws-tooling/"
+          >What tools I use on AWS</a
+        >.
+      </p>
+
+      <section>
+        <h2>AWS Cloudformation (including CDK)</h2>
+        <dl>
+          <dt>Overall Price</dt>
+          <dd>Free</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>AWS Cognito</h2>
+        <dl>
+          <dt>Monthly Active Users (MAUs)</dt>
+          <dd>First 50,000 are free, $0.0055 per MAU per month afterwards</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>AWS DynamoDB</h2>
+        <dl>
+          <dt>Write Request Units</dt>
+          <dd>$1.25 per million write request units</dd>
+          <dt>Read Request Units</dt>
+          <dd>$0.25 per million read request units</dd>
+          <dt>Storage</dt>
+          <dd>First 25GB is free, $0.25 per GB-month afterwards</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>AWS EC2</h2>
+        <dl>
+          <dt>t4g.nano VM (2 vCPU, 0.5GB RAM)</dt>
+          <dd>$4.00 / month</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>AWS IAM</h2>
+        <dl>
+          <dt>Overall Price</dt>
+          <dd>Free</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>AWS Lambda</h2>
+        <dl>
+          <dt>Duration</dt>
+          <dd>$0.0000133334 per GB-second</dd>
+          <dt>Requests</dt>
+          <dd>$0.20 per million requests</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>AWS SNS</h2>
+        <dl>
+          <dt>Notifications</dt>
+          <dd>
+            First 1 million requests per month are free, $0.50 per 1 million
+            requests thereafter
+          </dd>
+        </dl>
+      </section>
+      <footer>
+        Site by <a href="https://lannonbr.com">Benjamin Lannon</a>
+      </footer>
+    </main>
+  </body>
+</html>
