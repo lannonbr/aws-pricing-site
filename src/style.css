@@ -4,6 +4,10 @@ body {
   background-color: rgb(125 211 252);
 }
 
+a {
+  color: rgb(2 132 199);
+}
+
 main {
   max-width: 800px;
   margin: 20px auto;
@@ -44,4 +48,25 @@ section dl dt, section dl dd {
 
 footer {
   margin-top: 40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: white;
+  }
+
+  body {
+    background-color: rgb(12 74 110);
+  }
+
+  main {
+    background-color: rgb(51 65 85);
+    color: white;
+  }
+
+  section dl,
+  section dl dt,
+  section dl dd {
+    border-color: white;
+  }  
 }
